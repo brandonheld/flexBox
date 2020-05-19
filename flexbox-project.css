@@ -1,0 +1,218 @@
+/* Write your CSS here. */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.header-nav__container {
+  display: flex;
+  background-color: #026AA7;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 4px;
+  color: white;
+  justify-content: space-between;
+}
+
+.team__container {
+  background-color: #f4f5f7;
+  padding: 32px;
+}
+
+.team__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 10px;
+}
+
+.team__info > h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.team__info a {
+  color: #172b4d;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.tabbed-nav__container {
+  background-color: #f4f5f7;
+}
+
+.tabbed-nav__group {
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+
+.tabbed-nav__link {
+  background-color: #FFFFFF;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d;
+}
+
+.boards__container {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1400px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.boards__sidebar {
+  background-color:#6C547B;
+  border-radius: 3px;
+  margin: 0 32px 32px 0;
+  padding: 0 20px;
+  max-height: 130px;
+  max-width: 180px;
+  width: 20%;
+  flex: 0 0 220px;
+  padding-bottom: 32px;
+}
+
+.boards__sidebar-content p.title,
+.boards__sidebar-content a {
+  color: #FFFFFF;
+}
+
+.boards__sidebar-content > p.description {
+  color: lightblue;
+}
+
+.boards__group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.boards__board {
+  background-color: black;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+  height: 100px;
+  margin: 0 8px 16px;
+  max-width: 250px;
+  padding: 4px 8px;
+  position: relative;
+  color: #FFFFFF;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+@media screen and (max-width: 730px) {
+  .header-nav__button#search > input, 
+  .boards-label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .boards__board {
+    width: 100%;
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .boards__sidebar {
+    margin: 0 auto 32px;
+  } 
+  .boards__group {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1324px) {
+  .boards__group {
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1280px) {
+  .boards__board {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabbed-nav__group {
+    display: unset;
+  }
+  .tabbed-nav__link {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Supplied CSS follows. */
+.header-nav__button {
+  display: inline;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  background-color: hsla(0,0%,100%,.3);
+  box-shadow: none;
+  color: #fff;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 4px 0 0;
+  padding: 0;
+  transition: .1s ease;
+  white-space: nowrap;
+  padding: 8px;
+  height: 32px;
+  width: 32px;
+}
+
+.header-nav__button#search > input {
+  border-style: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.header-nav__button > .boards-label {
+  font-weight: 700;
+  padding-left: 4px;
+}
+
+.header-nav__trello-logo {
+  opacity: 0.5;
+  display: block;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 5px;
+}
